@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Create quiz</title>
+     <!--This link is for css file  -->
+    <link rel="stylesheet" href="createquiz.css">
+    <!-- This is bootstrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  </head>
+  <body>
+
+
+    <div class="topnav" id="myTopnav">
+      <a href="Qform.html">Enter questions here</a>
+      <a href="signin.html"> Sign Up</a>
+      <a href="About.html">About</a>     
+        <a href="JoiningQuiz.html">Join Quiz</a>
+        <a href="CreateQuiz.html" class="active">Create Quiz</a>
+        <a href="home.html" >Home</a>
+        
+    </div>
+
+    
+
+
+      <div class="purpose"> 
+      <h2>Are you hosting it for professional use or Friendly challenge ?</h2>
+        <select name="Purpose">
+          <option value="professional">professional</option>
+          <option value="friendly">friendly</option>
+          <option value="Others">Others</option>
+        </select>
+      </div> 
+
+      <div class="type">
+      <h2>What is the agenda or the main topic of quiz ?</h2>
+      <input type="text" name="" value="" placeholder="Eg: History,Math,General Knowledge" required>
+        
+      </div>
+        
+      <div class="score">
+      <h2>When would you like the attendees to see their scores ?</h2>
+      <select name="scores">
+        <option value="along with the quiz">along_quiz</option>
+        <option value="after the quiz">after_the_quiz</option>
+        <option value="later">later</option>
+      </select>
+      </div>
+
+
+        <p></p>
+        <form class="submit" action="D:\website\Quiz 0.1\Qform.html" method="GET">
+        <button type="Submit" id="sub">Create Quiz Now</button>
+        </form>
+
+      </body>
+</html>
+
+
+

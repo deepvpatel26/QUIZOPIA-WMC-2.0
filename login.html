@@ -1,0 +1,20 @@
+<div class="login-card" style="flex: 0 0 30%;">
+    <section class="simple-signin">
+        <h3 class="text-muted text-center">Sign-in</h3>
+        <p class="text-muted text-center">
+            Sign-in using the Google account you registered with to access your application or course dashboard.
+        </p>
+        <p class="text-muted text-center">
+            Registered learners who have been provided with a student email ID, which is google enabled, should
+            sign-in using their student email ID.
+        </p>
+    </section>
+
+    <!-- Common -->
+    <section class="mb-4">
+        <form action="/auth/login?next=" method="POST" class="form-signin">
+            <div id="firebaseui-auth-container" lang="en"><div class="firebaseui-container firebaseui-page-provider-sign-in firebaseui-id-page-provider-sign-in firebaseui-use-spinner"><div class="firebaseui-card-content"><form onsubmit="return false;"><ul class="firebaseui-idp-list"><li class="firebaseui-list-item"><button class="firebaseui-idp-button mdl-button mdl-js-button mdl-button--raised firebaseui-idp-google firebaseui-id-idp-button" data-provider-id="google.com" data-upgraded=",MaterialButton"><span class="firebaseui-idp-icon-wrapper"><img class="firebaseui-idp-icon" alt="" src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"></span><span class="firebaseui-idp-text firebaseui-idp-text-long">Sign in with Google</span><span class="firebaseui-idp-text firebaseui-idp-text-short">Google</span></button></li></ul></form></div><div class="firebaseui-card-footer firebaseui-provider-sign-in-footer"><p class="firebaseui-tos firebaseui-tospp-full-message">By continuing, you are indicating that you accept our <a href="javascript:void(0)" class="firebaseui-link firebaseui-tos-link" target="_blank">Terms of Service</a> and <a href="javascript:void(0)" class="firebaseui-link firebaseui-pp-link" target="_blank">Privacy Policy</a>.</p></div></div></div>
+            <div id="loader" style="display: none;">Loading...</div>
+        </form>
+    </section>
+</div>

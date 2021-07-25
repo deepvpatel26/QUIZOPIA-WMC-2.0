@@ -1,0 +1,224 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    
+    </head>
+    <title>
+        Upload Questions
+        
+    </title>
+    <link rel="stylesheet" href="Qform.css">
+        
+    <body> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div class="topnav" id="myTopnav">
+        <a href="Qform.html" class="active">Enter questions here</a>
+        <a href="signin.html"> Sign Up</a>
+        <a href="About.html">About</a>     
+        <a href="JoiningQuiz.html">Join Quiz</a>
+        <a href="CreateQuiz.html">Create Quiz</a>
+        <a href="home.html" >Home</a>
+        
+        </div>
+
+
+        <h1>Welcome to the world of quizes build your quiz</h1>
+       
+        <label for="Question">Enter your question here and also select the correct answer . The below form is just for diplay purose fill the form below this display</label>
+        <p></p>
+
+    <div class="for">
+        <div class="form">
+        <form class="ques" action="" method="GET">
+
+            <div class="qfo">
+                <label for="question" class="question1"> Examplar  Question : </label>
+                <textarea class="question" id="question" rows="2" placeholder="What is the capital of INDIA ?" style="width:70%; vertical-align: top;" disabled></textarea>
+            </div>
+            
+            <div class="a">
+            <label for="optA" id="a">A</label>
+            <label><input type="radio" name="opt" checked></label>
+            <input  class="a" type="text" name="optA" value="DELHI"  style="width:20%;" disabled><br>
+            </div>
+
+            <label for="optB" id="b">B</label>
+            <label><input type="radio" name="opt" disabled></label>
+            <input class="b" type="text" name="optB" value="BANGLORE" style="width:20%" disabled><br>
+
+            <label for="optC" id="c">C</label>
+            <label><input type="radio" name="opt" disabled></label>
+            <input class="c" type="text" name="optC" value="MUMBAI" style="width:20%" disabled><br>
+
+            <label for="optD" id="d">D</label>
+            <label><input type="radio" name="opt" disabled></label>
+            <input class="d" type="text" name="optd" value="CHENNAI" style="width:20%" disabled><br>
+
+        </form>
+        </div>
+
+        <div class="add">
+            
+            <a href="#" class="add_more" disabled>Add More +</a>
+            <a href="#" class="submit" disabled>Submit</a>
+
+        </div>
+
+    </div>
+        <p>x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x</p>
+        
+        <form novalidate='novalidate'>
+        <div class="password">
+            <label>Do you want to protect your quiz , create a password or Quizode for your quiz:</label>
+            <input type="text" name="pass" placeholder=" enter 4 digit numerical Quizode" style="width: 20%; font-family: cursive;">
+            <div class="passsub">
+            
+            </div>
+        </div>
+
+
+
+        
+            <div class='repeater'>
+                
+                <section class='repeatable'>
+                <h2>Question 1</h2>
+                <label>
+                    <textarea data-structure="question" class='textbox' name="question_1"  id='Question_1' placeholder='Enter your Question here...' rows='2' style="width: 50%; font-size: 28px;font-family:cursive"></textarea>
+                </label>
+
+                <div class='half-holder clearfix'>
+                    <label class='half'>
+                        Option A :
+                        <label><input data-structure="choose" type="radio" name="opt" checked></label>
+                        <input class='a' data-structure='optA' id='optA_1' maxlength='255' name='first_name_3'
+                             required='required' type='text'>
+                    </label>
+                    <label class='half'>
+                        Option B :
+                        <label><input data-structure="choose" type="radio" name="opt" ></label>
+                        <input class='b' data-structure='optB' id='optB_1' maxlength='255' name='last_name_3'
+                             required='required' type='text'>
+                    </label><br>
+                    <label class='half'>
+                        Option C :
+                        <label><input data-structure="choose" type="radio" name="opt"></label>
+                        <input class='c' data-structure='optC' id='optC_1' maxlength='30' name='phone_3'
+                            required='required' type='text' >
+                    </label>
+                    <label class='half'>
+                        Option D :
+                        <label><input data-structure="choose" type="radio" name="opt"></label>
+                        <input class='d' data-structure='optD' id='optD_1' maxlength='255' name='email_3'
+                             required='required' type='text' >
+                    </label>
+                </div>
+              
+                            
+                </section>
+
+               
+                <section class='repeatable'>
+                    <h2>Question 2</h2>
+                    <label>
+                    <textarea data-structure="question" class='textbox' name="question_2" id='Question_2' placeholder='Enter your Question here...' rows='2'
+                        style="width: 50%; font-size: 28px;font-family:cursive"></textarea>
+                    </label>
+                    <div class='half-holder clearfix'>
+                        <label class='half'>
+                            Option A :
+                            <label><input data-structure="choose" type="radio" name="opt1" checked></label>
+                            <input class='textbox' data-structure='optA' id='optA_2' maxlength='255' name='first_name_3'
+                                 required='required' type='text'>
+                        </label>
+                        <label class='half'>
+                            Option B :
+                            <label><input data-structure="choose" type="radio" name="opt1"></label>
+                            <input class='textbox' data-structure='optB' id='optB_2' maxlength='255' name='last_name_3'
+                                 required='required' type='text'>
+                        </label><br>
+                        <label class='half'>
+                            Option C :
+                            <label><input data-structure="choose" type="radio" name="opt1"></label>
+                            <input class='textbox' data-structure='optC' id='optC_2' maxlength='30' name='phone_3'
+                                 required='required' type='text'>
+                        </label>
+                        <label class='half'>
+                            Option D :
+                            <label><input data-structure="choose" type="radio" name="opt1"></label>
+                            <input class='textbox' data-structure='optD' id='optD_2' maxlength='255' name='email_3'
+                                required='required' type='text'>
+                        </label>
+                    </div>
+               
+                </section>
+
+
+               
+                <section class='repeatable'>
+                    <h2>Question 3</h2>
+                    <label>
+                    <textarea data-structure="question" class='textbox' name="question_3" id='Question_3' placeholder='Enter your Question here...' rows='2'
+                        style="width: 50%; font-size: 28px;font-family:cursive"></textarea>
+                    </label>
+                    <div class='half-holder clearfix'>
+                        <label class='half'>
+                            Option A :
+                            <label><input data-structure="choose" type="radio" name="opt2" checked></label>
+                            <input class='textbox' data-structure='optA' id='optA_3' maxlength='255'
+                                name='first_name_3'  required='required' type='text'>
+                        </label>
+                        <label class='half'>
+                            Option B :
+                            <label><input data-structure="choose" type="radio" name="opt2"></label>
+                            <input class='textbox' data-structure='optB' id='optB_3' maxlength='255'
+                                name='last_name_3' required='required' type='text'>
+                        </label><br>
+                        <label class='half'>
+                            Option C :
+                            <label><input data-structure="choose" type="radio" name="opt2"></label>
+                            <input class='textbox' data-structure='optC' id='optC_3' maxlength='30' name='phone_3'
+                                 required='required' type='text'>
+                        </label>
+                        <label class='half'>
+                            Option D :
+                            <label><input data-structure="choose" type="radio" name="opt2"></label>
+                            <input class='textbox' data-structure='optD' id='optD_3' maxlength='255' name='email_3'
+                                 required='required' type='text'>
+                        </label>
+                    
+                    </div>                   
+                     
+                    <p></p>
+                </section>
+              
+                <input id='count' name='count' type='hidden' value='3'>
+            </div>
+            <p></p>
+            <div class="sub">
+            <input id='submit' name='submit' type='submit' value='Submit' style="background-color: #D80C2D">
+        </div>
+        </form>
+ 
+    
+    <script src="qform1.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script src="Qform.js"></script>
+
+    
+
+    </body>
+    
+</html>
+
+
+
+
+

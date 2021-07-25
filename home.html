@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Welcome to Quizopia !</title>
+        <link rel="stylesheet" href="home.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      </head>
+    
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,700&family=Zen+Loop:ital@1&display=swap" rel="stylesheet">
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
+    <body>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <div class="topnav" id="myTopnav">
+        <a href="signin.html"> Sign Up</a>
+        <a href="About.html">About</a>
+        <a href="JoiningQuiz.html">Join Quiz</a>
+        <a href="CreateQuiz.html">Create Quiz</a>
+        <a href="home.html" class="active">Home</a>
+        
+        </div>
+        
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <div class=head>
+        <h1><b>Hi welcome to Quizopia</b></h1>
+        </div>
+
+    <div class="loginfo">
+
+        <div class="info"><h2 style="font-size: 2.5vw;">  This is an website which will help you build a
+        quiz for any kind of purpose like institutional purpose company purpose etc and 
+        can also be used for friendly challenges !!! Please log in and start your jourey </h2>
+        </div> 
+                    
+        <div class="login"> 
+            <form>
+               
+            <h2 style="font-size: 2vw;"> log in below</h2>
+            <h2 style="font-size: 2vw;">If already a Member</h2>   
+           
+            <span class="input-item">
+                <i class="fa fa-user-circle"></i>
+              </span>   
+            <input type="email" name="username" placeholder="enter mail id" required>
+            <p></p>
+            <span class="input-item">
+                <i class="fa fa-key"></i>
+               </span>
+            <input type="password" name="password" value=""  placeholder="must be of 8 charecters" required>
+            <span>
+                <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i>
+             </span>
+            <p></p>
+            
+            <div class="log_but">
+            <button class="log-in"> Log In </button>
+            </div>
+            <p></p>
+            <div class="signup">
+            <button class="btn submits sign-up">Sign Up 
+                      <i class="fa fa-user-plus" aria-hidden="true"></i>
+                      </button>
+                </div>
+        </div>
+            </form>
+            <p></p>
+        </div> 
+
+    </div>
+
+        <p></p>
+
+        <div class="ready">
+        <img src="quiz time.jpg" alt="Oh oH image under process" width="100%" height="500"> 
+        </div>
+
+        <div class="heading">
+        <h2>Features of this website</h2>
+        </div>
+        
+
+
+          <div class="w3-content w3-display-container" style="max-width:800px">
+            <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsYtQYUBp6GRPrCRtS9AkUiWKIR5fNW_BzPg&usqp=CAU" style="width:100%" height=500px>
+            <img class="mySlides" src="https://creeksidenaturals.com/wp-content/uploads/2017/02/Easy-to-Use.png" style="width:100%" height="500px">
+            <img class="mySlides" src="https://thumbs.dreamstime.com/b/its-quiz-time-text-wooden-cubes-177037660.jpg" style="width:100%" height="500px">
+            <img class="mySlides" src="D:\website\Quiz 0.1\photo_2021-07-21_16-54-34.jpg" style="width:100%" height="500px">
+            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+              <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+              <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+            </div>
+          </div>
+          
+          <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+          
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+          
+          function currentDiv(n) {
+            showDivs(slideIndex = n);
+          }
+          
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" w3-white", "");
+            }
+            x[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " w3-white";
+          }
+          </script>
+
+          <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+            </script>
+    
+
+                  
+    </body>
+
+</html>
